@@ -31,12 +31,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog_app.apps.BlogAppConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # introspects the source code for all installed project apps to present documentation on controller methods (views.py) and
+    # model objects (models.py)
+    'django.contrib.admindocs',
 ]
 
 MIDDLEWARE = [
