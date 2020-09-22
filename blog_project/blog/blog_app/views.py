@@ -3,22 +3,6 @@ from django.http import HttpResponse
 from .models import Post
 
 
-# Create your views here.
-# posts = [
-#     {
-#         'author': 'Harsh Biyani',
-#         'title': 'Blog Post 1',
-#         'content': 'First post content',
-#         'date_posted': 'September 19, 2020'
-#     },
-#     {
-#         'author': 'Harshita Biyani',
-#         'title': 'Blog Post 2',
-#         'content': 'Second post content',
-#         'date_posted': 'September 20, 2020'
-#     },
-# ]
-
 def home(request):
     """ Displays the home page consisting all posts """
     posts = Post.objects.all()
