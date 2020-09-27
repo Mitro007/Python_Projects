@@ -129,3 +129,9 @@ STATIC_URL = '/static/'
 
 # By default, crispy_forms uses BootStrap2
 CRISPY_TEMPLATE_PACK='bootstrap4'
+
+# required if using @login_required decorator to tell Django the path to login page
+LOGIN_URL = 'login'
+
+# tells Django to redirect to specified page after successful login
+LOGIN_REDIRECT_URL = 'blog_home'
