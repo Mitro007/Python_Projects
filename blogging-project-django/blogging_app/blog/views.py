@@ -9,7 +9,7 @@ def greet(request):
 
 def home(request):
   context = {'posts': Post.objects.all(),}
-  return render(request, 'home.html', context=context)
+  return render(request, 'blog/home.html', context=context)
 
 def about(request):
-  return render(request, 'about.html', {'title': 'About'})
+  return render(request, 'blog/about.html', {'title': 'About'})
